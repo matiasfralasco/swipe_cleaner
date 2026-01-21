@@ -11,6 +11,8 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
+.env
+.env.*
 
 # IntelliJ related
 *.iml
@@ -18,20 +20,69 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code
+.vscode/
+*.code-workspace
 
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins-dependencies
+.flutter-plugins
 .pub-cache/
 .pub/
 /build/
 /coverage/
+lib/generated_plugin_registrant.dart
+
+# Android
+/android/.gradle
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+/android/key.properties
+/android/*.jks
+/android/*.keystore
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS
+/ios/Pods/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.modulemap
+/ios/Flutter/GeneratedPluginRegistrant.*
+/ios/Flutter/ephemeral/
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/local.properties
+/ios/.symlinks/
+/ios/.vscode/
+/ios/**/xcshareddata/
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+/macos/Flutter/GeneratedPluginRegistrant.swift
+/macos/Flutter/Flutter-Debug.xcconfig
+/macos/Flutter/Flutter-Release.xcconfig
+/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Linux
+/linux/flutter/generated_plugins.cmake
+/linux/flutter/generated_plugin_registrant.cc
+/linux/flutter/generated_plugin_registrant.h
+/linux/flutter/generated_plugins_plugin_list.cc
+
+# Windows
+/windows/flutter/generated_plugins.cmake
+/windows/flutter/generated_plugin_registrant.cc
+/windows/flutter/generated_plugin_registrant.h
+/windows/flutter/generated_plugins_plugin_list.cc
+
+# Web
+lib/generated/
+lib/main.dart.js
 
 # Symbolication related
 app.*.symbols
@@ -39,7 +90,5 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Mac
+.DS_Store
